@@ -1,22 +1,22 @@
 import React from 'react';
 import logo from "../../assets/Images/marstrx.png";
-import bgVideo from "../../assets/Images/vd.mp4";
+// import bgVideo from "../../assets/Images/vd.mp4";
 import "./Home.css";
 
 function Home() {
   return (
-    <div className="relative min-h-screen w-full text-white flex items-center justify-center overflow-hidden px-4 md:px-10">
+    <div className="bg-gray-800 relative min-h-screen w-full text-white flex items-center justify-center overflow-hidden px-4 md:px-10">
 
-      <video
+      {/* <video
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
         src={bgVideo}
         autoPlay
         muted
         loop
         playsInline
-      />
+      /> */}
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 max-w-6xl mx-auto text-center md:text-left">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-12 max-w-6xl mx-auto text-center md:text-left">
         <div>
           <img
             className="w-36 md:w-48 lg:w-64 rounded"

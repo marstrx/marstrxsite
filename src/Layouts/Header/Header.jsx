@@ -9,8 +9,8 @@ function Header() {
     }
   return (
     <>
-    <div className='flex items-center justify-between fixed w-full mt-0 pr-5 pl-5 bg-blue-950 text-white p-5 font-mono font-bold z-50'>
-        <div className='flex items-center gap-1'>
+    <div className='flex items-center justify-between fixed w-full mt-0 md:pr-5 md:pl-5 bg-blue-950 text-white p-3 md:p-5 font-mono font-bold z-50'>
+        <div className='flex items-center md:gap-1'>
             <img className='w-12 rounded-full' src={logo} alt="Marstrx Logo" />
             <h3>Marstrx</h3>
         </div>

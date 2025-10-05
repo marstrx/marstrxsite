@@ -16,7 +16,7 @@ function Home() {
         playsInline
       /> */}
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-12 max-w-6xl mx-auto text-center md:text-left">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-12 max-w-6xl mx-auto text-center md:text-left">
         <div>
           <img
             className="w-36 md:w-48 lg:w-64 rounded"
@@ -31,9 +31,20 @@ function Home() {
           <h3 className="text-lg md:text-2xl mt-2 animated-gradient-text">
             Full Stack Developer
           </h3>
+          {/* socials */}
+
+          <div>
+            
+          </div>
         </div>
+
+        
+        
       </div>
+
     </div>
+
+    
   );
 }
 

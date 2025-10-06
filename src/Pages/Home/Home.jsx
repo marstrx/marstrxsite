@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import logo from "../../assets/Images/marstrx.png";
 // import bgVideo from "../../assets/Images/vd.mp4";
 import "./Home.css";
@@ -9,7 +9,6 @@ import xLogo from "../../assets/Images/x.png";
 function Home() {
   return (
     <div className="bg-gray-800 relative min-h-screen w-full text-white flex items-center justify-center overflow-hidden px-4 md:px-10">
-
       {/* <video
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
         src={bgVideo}
@@ -36,20 +35,46 @@ function Home() {
           </h3>
           {/* socials */}
 
-          <div className='flex flex-row gap-6 mt-10'>
-            <a href="https://www.linkedin.com/in/marouanebachar"><img className='w-[35px]' src={linkdinLogo} alt="" /></a>
-            <a href="https://github.com/marstrx"><img className='w-[30px]' src={githubLogo} alt="" /></a>
-            <a href="https://x.com/marstrx_"><img className='w-[30px]' src={xLogo} alt="" /></a>
+          <div className="flex flex-row gap-8 mt-7 transition duration-300 ease-in-out">
+            <a
+              href="https://www.linkedin.com/in/marouanebachar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-[42px] transform transition-transform duration-300 hover:scale-110"
+                src={linkdinLogo}
+                alt="LinkedIn logo"
+              />
+            </a>
+
+            <a
+              href="https://github.com/marstrx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-[37px] transform transition-transform duration-300 hover:scale-110"
+                src={githubLogo}
+                alt="GitHub logo"
+              />
+            </a>
+
+            <a
+              href="https://x.com/marstrx_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-[37px] transform transition-transform duration-300 hover:scale-110"
+                src={xLogo}
+                alt="X logo"
+              />
+            </a>
           </div>
         </div>
-
-        
-        
       </div>
-
     </div>
-
-    
   );
 }
 

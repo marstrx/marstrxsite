@@ -2,6 +2,9 @@ import React from 'react';
 import logo from "../../assets/Images/marstrx.png";
 // import bgVideo from "../../assets/Images/vd.mp4";
 import "./Home.css";
+import linkdinLogo from "../../assets/Images/linkdin.png";
+import githubLogo from "../../assets/Images/github.png";
+import xLogo from "../../assets/Images/x.png";
 
 function Home() {
   return (
@@ -33,8 +36,10 @@ function Home() {
           </h3>
           {/* socials */}
 
-          <div>
-            
+          <div className='flex flex-row gap-6 mt-10'>
+            <a href="https://www.linkedin.com/in/marouanebachar"><img className='w-[35px]' src={linkdinLogo} alt="" /></a>
+            <a href="https://github.com/marstrx"><img className='w-[30px]' src={githubLogo} alt="" /></a>
+            <a href="https://x.com/marstrx_"><img className='w-[30px]' src={xLogo} alt="" /></a>
           </div>
         </div>
 

@@ -8,7 +8,7 @@ function About() {
             <div className='text-white flex items-center flex-col gap-5'>
                 <h1 className='text-5xl font-bold pt-6'>About me</h1>
                 <p className='text-center'>
-                    Bienvenue dans notre agence de développement, située à Sefrou, Maroc ! Notre équipe talentueuse et dédiée est spécialisée dans le développement d'applications mobiles et web, en tirant parti de technologies de pointe telles que Dart, Java, Kotlin, Swift, JavaScript, React et Laravel. À chaque projet, nous nous efforçons de livrer non seulement une application, mais une solution qui propulse votre entreprise vers l'avant. 
+                    
                 </p>
             </div>
 

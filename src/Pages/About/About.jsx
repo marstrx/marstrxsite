@@ -4,6 +4,8 @@ import Tools from "../Skills/Tools";
 import Databases from "../Skills/Databas";
 import BackEnd from "../Skills/BackEnd";
 import FrontEnd from "../Skills/FrontEnd";
+import FreecodecampFrontEndLibraries from "../Certifications/freecodecamp-front-end-libraries";
+import Intro from "../Certifications/Intro";
 
 function About() {
   return (
@@ -42,6 +44,7 @@ function About() {
             who appreciate quality code, strong problem-solving, and creativity.
           </p>
         </div>
+        {/* ends of about me */}
 
         {/* skills */}
         <div className="flex flex-col">
@@ -63,6 +66,12 @@ function About() {
             <Tools />
           </div>
         </div>
+        {/* Ends of skills */}
+
+
+        {/* certifications */}
+        <Intro/>
+        <FreecodecampFrontEndLibraries/>
       </div>
     </>
   );

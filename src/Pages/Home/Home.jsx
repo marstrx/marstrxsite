@@ -11,7 +11,7 @@ function Home() {
     <div className="bg-gray-800 relative min-h-screen w-full text-white flex items-center justify-center overflow-hidden px-4 md:px-10">
      
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-5 max-w-6xl mx-auto text-center md:text-left">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-2 max-w-6xl mx-auto text-center md:text-left">
         <div>
           <img
             className="w-48 md:w-64 lg:w-80 rounded"

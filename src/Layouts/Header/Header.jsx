@@ -9,7 +9,7 @@ function Header() {
     }
   return (
     <>
-    <div className='flex items-center justify-between fixed w-full mt-0 md:pr-5 md:pl-5 bg-blue-950 text-white p-3 md:p-5 font-mono font-bold z-50'>
+    <div className='flex items-center justify-between fixed w-full mt-0 md:pr-5 md:pl-5 bg-blue-950 text-white p-3 md:p-5 font-mono font-bold z-50 overflow-x-hidden'>
         <div className='flex items-center md:gap-1'>
             <img className='w-12 rounded-full' src={logo} alt="Marstrx Logo" />
             <h3>Marstrx</h3>
@@ -37,7 +37,7 @@ function Header() {
         </button>
 
         {isOpen ?(
-            <div className='md:hidden fixed top-16 left-0 w-full bg-blue-950 text-white flex flex-col items-center gap-6 py-6 z-40'>
+            <div className='md:hidden fixed top-16 left-0 w-full bg-blue-950 text-white flex flex-col items-center gap-6 py-6 z-40 overflow-x-hidden'>
             <Link to={"/"} onClick={()=>setIsOpen(false)}>Home</Link>
             <Link to={"/"} onClick={()=>setIsOpen(false)}>About</Link>
             <Link to={"/"} onClick={()=>setIsOpen(false)}>Projects</Link>

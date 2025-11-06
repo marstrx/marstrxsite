@@ -9,19 +9,12 @@ import xLogo from "../../assets/Images/x.png";
 function Home() {
   return (
     <div className="bg-gray-800 relative min-h-screen w-full text-white flex items-center justify-center overflow-hidden px-4 md:px-10">
-      {/* <video
-        className="fixed top-0 left-0 w-full h-full object-cover -z-10"
-        src={bgVideo}
-        autoPlay
-        muted
-        loop
-        playsInline
-      /> */}
+     
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-12 max-w-6xl mx-auto text-center md:text-left">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-5 max-w-6xl mx-auto text-center md:text-left">
         <div>
           <img
-            className="w-36 md:w-48 lg:w-64 rounded"
+            className="w-48 md:w-64 lg:w-80 rounded"
             src={logo}
             alt="Marstrx logo"
           />

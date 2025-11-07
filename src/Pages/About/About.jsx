@@ -71,7 +71,13 @@ function About() {
 
         {/* certifications */}
         <Intro/>
-        <FreecodecampFrontEndLibraries/>
+        <div className="flex overflow-x-auto gap-6 py-12 px-4 scrollbar-thin">
+          <FreecodecampFrontEndLibraries/>
+          <FreecodecampFrontEndLibraries/>
+          <FreecodecampFrontEndLibraries/>
+          <FreecodecampFrontEndLibraries/>
+          
+        </div>
       </div>
     </>
   );

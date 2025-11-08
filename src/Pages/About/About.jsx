@@ -4,8 +4,8 @@ import Tools from "../Skills/Tools";
 import Databases from "../Skills/Databas";
 import BackEnd from "../Skills/BackEnd";
 import FrontEnd from "../Skills/FrontEnd";
-import FreecodecampFrontEndLibraries from "../Certifications/freecodecamp-front-end-libraries";
 import Intro from "../Certifications/Intro";
+import MyCertifs from "../Certifications/MyCertifs";
 
 function About() {
   return (
@@ -68,16 +68,13 @@ function About() {
         </div>
         {/* Ends of skills */}
 
+        {/* certifications Intro*/}
+        <Intro />
+        {/* certifications Cars */}
+        <MyCertifs />
 
-        {/* certifications */}
-        <Intro/>
-        <div className="flex overflow-x-auto gap-6 py-12 px-4 scrollbar-thin">
-          <FreecodecampFrontEndLibraries/>
-          <FreecodecampFrontEndLibraries/>
-          <FreecodecampFrontEndLibraries/>
-          <FreecodecampFrontEndLibraries/>
-          
-        </div>
+
+        <div className="h-80"></div>
       </div>
     </>
   );

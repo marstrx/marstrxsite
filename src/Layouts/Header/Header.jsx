@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import logo from "../../assets/Images/marstrx.png";
+import logo from "../../assets/Images/marstrx.webp";
 
 function Header() {
     const [isOpen ,setIsOpen] = useState(false);

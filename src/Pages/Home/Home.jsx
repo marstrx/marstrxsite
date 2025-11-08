@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../../assets/Images/marstrx.png";
+import logo from "../../assets/Images/marstrx.webp";
 import "./Home.css";
-import linkdinLogo from "../../assets/Images/linkdin.png";
-import githubLogo from "../../assets/Images/github.png";
-import xLogo from "../../assets/Images/x.png";
+import linkdinLogo from "../../assets/Images/linkdin.webp";
+import githubLogo from "../../assets/Images/github.webp";
+import xLogo from "../../assets/Images/x.webp";
 
 function Home() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import freecodecampFrontEndLibrariesImg from "../../assets/certifications/freecodecampFrontEndLibraries.png";
+import freecodecampFrontEndLibrariesImg from "../../assets/certifications/freecodecampFrontEndLibraries.webp";
 
 function AllCerData() {
   const myCertifications = [

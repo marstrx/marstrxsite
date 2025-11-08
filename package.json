@@ -1,6 +1,6 @@
 {
   "name": "marstrxsite",
-  "homepage":"https://marstrx.github.io/marstrxsite/",
+  "homepage": "https://marstrx.github.io/marstrxsite/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

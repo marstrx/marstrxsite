@@ -12,7 +12,13 @@ function Projects() {
         </h1>
 
         <div className="">
-          <div className="flex space-x-4 pb-4 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+          <div
+            className="flex space-x-4 pb-4 overflow-x-auto "
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}
+          >
             {projects.map((project) => (
               <div
                 key={project.id}

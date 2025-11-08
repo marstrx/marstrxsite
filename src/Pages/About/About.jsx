@@ -72,9 +72,6 @@ function About() {
         <Intro />
         {/* certifications Cars */}
         <MyCertifs />
-
-
-        <div className="h-80"></div>
       </div>
     </>
   );

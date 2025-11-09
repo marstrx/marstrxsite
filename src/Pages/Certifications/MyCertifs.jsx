@@ -1,11 +1,12 @@
 import React from "react";
 import AllCerData from "./AllCerData";
+
 function MyCertifs() {
   const certifications = AllCerData();
 
   return (
     <div
-      className="overflow-x-auto "
+      className="overflow-x-auto"
       style={{
         scrollbarWidth: "none",
         msOverflowStyle: "none",
@@ -26,7 +27,7 @@ function MyCertifs() {
               <img
                 src={cert.img}
                 alt={`${cert.name} certification`}
-                className="w-96 max-w-full h-auto object-cover rounded shadow-md mb-16 mt-16"
+                className="w-96 h-64 object-cover rounded shadow-md mb-16 mt-16"
                 loading="lazy"
               />
             </a>

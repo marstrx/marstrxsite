@@ -66,7 +66,7 @@ function Contact() {
 
             {/* Message */}
             <div>
-              <label
+              <label 
                 htmlFor="message"
                 className="block text-sm font-semibold text-white mb-1"
               >

@@ -12,7 +12,7 @@ function Home() {
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 max-w-6xl mx-auto text-center md:text-left px-2">
           <div>
             <img
-              className="w-64 md:w-64 lg:w-80 rounded-lg"
+              className="w-64 md:w-64 lg:w-80 rounded-lg" fetchpriority="high"
               src={logo}
               alt="Marstrx logo"
             />

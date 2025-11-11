@@ -15,7 +15,7 @@ function Home() {
               className="w-64 md:w-64 lg:w-80 rounded-lg"
               src={logo}
               alt="Marstrx logo"
-              {...{"fetchpriority": "high"}}
+              fetchPriority="high"
             />
           </div>
           <div className="flex flex-col justify-center items-center md:items-start">

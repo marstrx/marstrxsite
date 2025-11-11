@@ -12,7 +12,7 @@ function Header() {
         <>
             <div className='flex items-center justify-between fixed w-full mt-0 md:pr-5 md:pl-5 bg-blue-950 text-white p-3 md:p-5 font-mono font-bold z-50 overflow-x-hidden'>
                 <div className='flex items-center md:gap-1'>
-                    <img className='w-12 rounded-full' src={logo} alt="Marstrx Logo" fetchPriority="high"/>
+                    <img className='w-12 rounded-full' src={logo} alt="Marstrx Logo" {...{"fetchpriority": "high"}}/>
                     <h3>Marstrx</h3>
                 </div>
                 <div className='hidden md:flex items-center gap-5'>

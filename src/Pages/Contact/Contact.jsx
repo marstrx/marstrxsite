@@ -26,7 +26,7 @@ const [result, setResult] = useState("");
     <div className="bg-gray-700 text-white min-h-screen py-8 px-3 sm:px-5 lg:px-7">
       <div className="max-w-7xl mx-auto">
         <div className="text-center md:mb-2 mb-4 sm:mb-2">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center">
             Get in touch
           </h1>
           <p className="mt-2 text-base text-white max-w-xs mx-auto sm:text-xl sm:max-w-2xl sm:mt-4">

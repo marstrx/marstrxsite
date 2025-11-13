@@ -5,6 +5,7 @@ import About from '../Pages/About/About.jsx';
 import Projects from "../Pages/Projects/Projects.jsx";
 import Github from "../Pages/Github/Github.jsx";
 import Contact from "../Pages/Contact/Contact.jsx";
+import Footer from "../Pages/Footer/Footer.jsx";
 function AppRoutes() {
   return (
     <>
@@ -13,7 +14,8 @@ function AppRoutes() {
     <About/>
     <Projects/>
     <Github/>
-    <Contact/> 
+    <Contact/>
+    <Footer/>
     </>
 
   )

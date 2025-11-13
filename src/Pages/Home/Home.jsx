@@ -1,11 +1,53 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useRef } from "react";
 import logo from "../../assets/Images/marstrx.webp";
-import "./Home.css";
 import linkdinLogo from "../../assets/Images/linkdin.webp";
 import githubLogo from "../../assets/Images/github.webp";
 import xLogo from "../../assets/Images/x.webp";
 
 function Home() {
+  const nameRef = useRef(null);
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    const animateGradient = (element) => {
+      if (!element) return;
+
+      // Apply the gradient styles
+      element.style.background = `
+        linear-gradient(
+          270deg,
+          #ff6b9d,
+          #e47474,
+          #5858d6,
+          #ff6b9d,
+          #e47474,
+          #5858d6
+        )
+      `;
+      element.style.backgroundSize = "400% 400%";
+      element.style.webkitBackgroundClip = "text";
+      element.style.webkitTextFillColor = "transparent";
+      element.style.backgroundClip = "text";
+      element.style.color = "transparent";
+
+      element.animate(
+        [{ backgroundPosition: "0% 50%" }, { backgroundPosition: "200% 50%" }],
+        {
+          duration: 5000,
+          iterations: Infinity,
+          easing: "linear",
+        }
+      );
+    };
+
+    // Apply animations
+    animateGradient(nameRef.current);
+    animateGradient(titleRef.current);
+  }, []);
+
+  //  end of animations
+
   return (
     <div className="bg-gray-800 min-h-screen pt-10 md:pt-20">
       <div className="relative w-full text-white flex items-center justify-center overflow-hidden py-12">
@@ -19,10 +61,16 @@ function Home() {
             />
           </div>
           <div className="flex flex-col justify-center items-center md:items-start">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold animated-gradient-text">
+            <h1
+              ref={nameRef}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold animated-gradient-text"
+            >
               Marouane Bachar
             </h1>
-            <h3 className="text-xl md:text-2xl lg:text-3xl mt-4 animated-gradient-text">
+            <h3
+              ref={titleRef}
+              className="text-xl md:text-2xl lg:text-3xl mt-4 animated-gradient-text"
+            >
               Full Stack Developer
             </h3>
 
@@ -77,7 +125,7 @@ function Home() {
           </div>
         </div>
       </div>
-      
+
       {/* Description Section */}
       <div>
         <h2 className="text-lg sm:text-xl md:text-2xl max-w-3xl text-center mx-auto text-gray-200 leading-relaxed">

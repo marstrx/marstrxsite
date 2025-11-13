@@ -13,7 +13,7 @@ function AppRoutes() {
     <About/>
     <Projects/>
     <Github/>
-    <Contact/>
+    <Contact/> 
     </>
 
   )

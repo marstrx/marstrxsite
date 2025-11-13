@@ -1,6 +1,27 @@
-import React from "react";
+import React ,{useState} from "react";
 
 function Contact() {
+const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", import.meta.env.VITE_ACCESS_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      setResult("Your message has been sent. Thank you!");
+      event.target.reset();
+    } else {
+      setResult("Error");
+    }
+  };
   return (
     <div className="bg-gray-700 text-white min-h-screen py-8 px-3 sm:px-5 lg:px-7">
       <div className="max-w-7xl mx-auto">
@@ -15,7 +36,7 @@ function Contact() {
 
         {/* Form */}
         <div className="max-w-sm mx-auto rounded-xl p-3 sm:max-w-2xl sm:p-6 md:p-8 lg:p-12">
-          <form className="space-y-2 sm:space-y-4">
+          <form className="space-y-2 sm:space-y-4" onSubmit={onSubmit}>
             {/* First Name */}
             <div>
               <label
@@ -25,6 +46,7 @@ function Contact() {
                 First Name
               </label>
               <input
+                name="name"
                 type="text"
                 id="first-name"
                 className="w-full px-2 py-2 text-sm border border-gray-300 rounded-md"
@@ -41,6 +63,7 @@ function Contact() {
                 Last Name
               </label>
               <input
+                name="name"
                 type="text"
                 id="last-name"
                 className="w-full px-2 py-2 text-sm border border-gray-300 rounded-md"
@@ -57,6 +80,7 @@ function Contact() {
                 Email
               </label>
               <input
+                name="email"
                 type="email"
                 id="email"
                 className="w-full px-2 py-2 text-sm border border-gray-300 rounded-md"
@@ -73,6 +97,7 @@ function Contact() {
                 Message
               </label>
               <textarea
+                name="message"
                 id="message"
                 rows={3}
                 className="w-full px-2 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 resize-none sm:rows-6"
@@ -87,6 +112,7 @@ function Contact() {
             >
               Send Message
             </button>
+            <span>{result}</span>
           </form>
         </div>
       </div>

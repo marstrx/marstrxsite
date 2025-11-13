@@ -70,7 +70,7 @@ function Home() {
             {/* Social Links */}
             <div className="flex flex-row gap-4 mt-4 transition duration-300 ease-in-out">
               <a
-                href="https://www.linkedin.com/in/marouanebachar"
+                href="https://www.linkedin.com/in/marstrx"
                 target="_blank"
                 rel="noopener noreferrer"
               >

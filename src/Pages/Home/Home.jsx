@@ -1,50 +1,49 @@
-import React, { useEffect } from "react";
-import { useRef } from "react";
+import React from "react";
+import styled, { keyframes, css } from "styled-components";
 import logo from "../../assets/Images/marstrx.webp";
 import linkdinLogo from "../../assets/Images/linkdin.webp";
 import githubLogo from "../../assets/Images/github.webp";
 import xLogo from "../../assets/Images/x.webp";
 
 function Home() {
-  const nameRef = useRef(null);
-  const titleRef = useRef(null);
+  const gradientMove = keyframes`
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+`;
 
-  useEffect(() => {
-    const animateGradient = (element) => {
-      if (!element) return;
+  const gradientTextStyles = css`
+    background: linear-gradient(
+      270deg,
+      #ff6b9d,
+      #e47474,
+      #5858d6,
+      #ff6b9d,
+      #e47474,
+      #5858d6
+    );
+    background-size: 400% 400%;
+    animation: ${gradientMove} 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  `;
 
-      // Apply the gradient styles
-      element.style.background = `
-        linear-gradient(
-          270deg,
-          #ff6b9d,
-          #e47474,
-          #5858d6,
-          #ff6b9d,
-          #e47474,
-          #5858d6
-        )
-      `;
-      element.style.backgroundSize = "400% 400%";
-      element.style.webkitBackgroundClip = "text";
-      element.style.webkitTextFillColor = "transparent";
-      element.style.backgroundClip = "text";
-      element.style.color = "transparent";
+  // H1
+  const AnimatedGradientText = styled.h1`
+    ${gradientTextStyles}
+  `;
 
-      element.animate(
-        [{ backgroundPosition: "0% 50%" }, { backgroundPosition: "200% 50%" }],
-        {
-          duration: 5000,
-          iterations: Infinity,
-          easing: "linear",
-        }
-      );
-    };
-
-    // Apply animations
-    animateGradient(nameRef.current);
-    animateGradient(titleRef.current);
-  }, []);
+  // H3
+  const AnimatedSubtitle = styled.h3`
+    ${gradientTextStyles}
+    font-weight: 600;
+    margin-top: 1rem;
+  `;
 
   //  end of animations
 
@@ -61,18 +60,12 @@ function Home() {
             />
           </div>
           <div className="flex flex-col justify-center items-center md:items-start">
-            <h1
-              ref={nameRef}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold animated-gradient-text"
-            >
+            <AnimatedGradientText className="text-4xl md:text-5xl lg:text-6xl font-bold animated-gradient-text">
               Marouane Bachar
-            </h1>
-            <h3
-              ref={titleRef}
-              className="text-xl md:text-2xl lg:text-3xl mt-4 animated-gradient-text"
-            >
+            </AnimatedGradientText>
+            <AnimatedSubtitle className="text-xl md:text-2xl lg:text-3xl mt-4 animated-gradient-text">
               Full Stack Developer
-            </h3>
+            </AnimatedSubtitle>
 
             {/* Social Links */}
             <div className="flex flex-row gap-4 mt-4 transition duration-300 ease-in-out">

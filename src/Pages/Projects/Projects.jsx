@@ -43,12 +43,12 @@ function Projects() {
                     {project.name}
                   </h3>
 
-                  <p className="text-sm text-white mb-3 line-clamp-2 h-10">
+                  <p className="text-sm text-gray-300 mb-3 line-clamp-2 h-10">
                     {project.des}
                   </p>
 
                   <div className="flex flex-wrap gap-1 mb-3">
-                    {project.tech.slice(0, 3).map((tech, index) => (
+                    {project.tech.slice(0, 5).map((tech, index) => (
                       <span
                         key={index}
                         className="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"
@@ -56,9 +56,9 @@ function Projects() {
                         {tech}
                       </span>
                     ))}
-                    {project.tech.length > 3 && (
+                    {project.tech.length > 5 && (
                       <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">
-                        +{project.tech.length - 3}
+                        +{project.tech.length - 5}
                       </span>
                     )}
                   </div>
@@ -83,7 +83,7 @@ function Projects() {
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200 text-sm"
+                      className="flex items-center text-blue-700 hover:text-blue-900 transition-colors duration-200 text-sm font-medium"
                     >
                       <svg
                         className="w-4 h-4 mr-1"

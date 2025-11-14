@@ -1,25 +1,31 @@
-import React ,{useState} from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 function Contact() {
-const [result, setResult] = useState("");
+  const MessageSent = () =>
+    toast.success("Your message has been sent. Thank you!");
+  const MessageFailed = () => toast.error("Your message has not been sent Try again");
+  const Loading = () => toast.loading("Sending....");
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    const loadingToast = Loading();
     const formData = new FormData(event.target);
     formData.append("access_key", import.meta.env.VITE_ACCESS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
+    toast.dismiss(loadingToast);
     if (data.success) {
-      setResult("Your message has been sent. Thank you!");
+      MessageSent();
+      toast.dismiss(loadingToast);
       event.target.reset();
     } else {
-      setResult("Error");
+      MessageFailed();
+      toast.dismiss(loadingToast);
     }
   };
   return (
@@ -90,7 +96,7 @@ const [result, setResult] = useState("");
 
             {/* Message */}
             <div>
-              <label 
+              <label
                 htmlFor="message"
                 className="block text-sm font-semibold text-white mb-1"
               >
@@ -112,10 +118,10 @@ const [result, setResult] = useState("");
             >
               Send Message
             </button>
-            <span>{result}</span>
           </form>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }

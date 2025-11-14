@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marstrx.com/sitemap.xml

@@ -38,8 +38,8 @@ function Home() {
     ${gradientTextStyles}
   `;
 
-  // H3
-  const AnimatedSubtitle = styled.h3`
+  // H2
+  const AnimatedSubtitle = styled.h2`
     ${gradientTextStyles}
     font-weight: 600;
     margin-top: 1rem;

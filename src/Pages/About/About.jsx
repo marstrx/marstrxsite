@@ -12,9 +12,9 @@ function About() {
     <>
       <div className="bg-gray-700 min-h-screen pl-5 pr-5">
         <div className="text-white flex items-center flex-col gap-5">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center">
             About me
-          </h1>
+          </h2>
         </div>
 
         {/*  about me paraghraph*/}

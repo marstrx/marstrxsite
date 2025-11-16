@@ -1,3 +1,6 @@
-*{
-    overflow-x: hidden;
+* {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }

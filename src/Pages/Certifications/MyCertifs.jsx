@@ -1,16 +1,17 @@
 import React from "react";
 import AllCerData from "./AllCerData";
 
+
 function MyCertifs() {
   const certifications = AllCerData();
 
   return (
     <div
-      className="overflow-x-auto"
-      style={{
-        scrollbarWidth: "none",
-        msOverflowStyle: "none",
-      }}
+      className="overflow-x-auto overflow-y-hidden"
+      // style={{
+      //   scrollbarWidth: "none",
+      //   msOverflowStyle: "none",
+      // }}
     >
       <div className="flex gap-5 flex-nowrap">
         {certifications.map((cert, index) => (
@@ -32,7 +33,9 @@ function MyCertifs() {
               />
             </a>
           </div>
+          
         ))}
+        
       </div>
     </div>
   );

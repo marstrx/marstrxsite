@@ -5,7 +5,7 @@ function Projects() {
   const projects = AllProjectsData();
 
   return (
-    <div className=" bg-gray-700 py-4 sm:py-8 px-3 sm:px-6 lg:px-8">
+    <div id="projects" className=" bg-gray-700 py-4 sm:py-8 px-3 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl text-white md:text-5xl sm:text-4xl font-bold text-center mb-6 sm:mb-8">
           My Projects

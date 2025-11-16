@@ -10,7 +10,7 @@ import MyCertifs from "../Certifications/MyCertifs";
 function About() {
   return (
     <>
-      <div className="bg-gray-700 min-h-screen pl-5 pr-5">
+      <div id="about" className="bg-gray-700 min-h-screen pl-5 pr-5">
         <div className="text-white flex items-center flex-col gap-5">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center">
             About me

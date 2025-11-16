@@ -53,7 +53,7 @@ function Home() {
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 max-w-6xl mx-auto text-center md:text-left px-2">
           <div>
             <img
-              className="w-64 md:w-64 lg:w-80 rounded-lg"
+              className="w-64 h-auto md:w-64 lg:w-80 rounded-lg"
               src={logo}
               alt="Marstrx logo"
               fetchPriority="high"
@@ -75,7 +75,7 @@ function Home() {
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-10 md:w-11 transform transition-transform duration-300 hover:scale-110"
+                  className="w-11 h-auto md:w-11 transform transition-transform duration-300 hover:scale-110"
                   src={linkdinLogo}
                   alt="LinkedIn logo"
                 />
@@ -87,19 +87,19 @@ function Home() {
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-9 md:w-10 transform transition-transform duration-300 hover:scale-110"
+                  className="w-9 h-auto md:w-10 transform transition-transform duration-300 hover:scale-110"
                   src={githubLogo}
                   alt="GitHub logo"
                 />
               </a>
 
               <a
-                href="https://x.com/marstrx_"
+                href="https://x.com/marstrx0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-9 md:w-10 transform transition-transform duration-300 hover:scale-110"
+                  className="w-9 h-auto md:w-10 transform transition-transform duration-300 hover:scale-110"
                   src={xLogo}
                   alt="X logo"
                 />
@@ -108,12 +108,12 @@ function Home() {
 
             {/* Buttons */}
             <div className="flex sm:flex-row gap-4 mt-8 justify-center md:justify-start">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+              <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
                 View my work
-              </button>
-              <button className="bg-transparent hover:bg-gray-700 text-white font-semibold py-3 px-6 border border-white rounded-lg transition duration-300 transform hover:scale-105">
+              </a>
+              <a href="#contact" className="bg-transparent hover:bg-gray-700 text-white font-semibold py-3 px-6 border border-white rounded-lg transition duration-300 transform hover:scale-105">
                 Contact me
-              </button>
+              </a>
             </div>
           </div>
         </div>

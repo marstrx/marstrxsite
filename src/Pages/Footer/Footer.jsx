@@ -8,7 +8,7 @@ function Footer() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 432 416"
-          className="w-7 h-7"
+          className="w-6 h-6 m:w-5 m:h-5 s:w-4 s:h-4"
         >
           <path
             fill="currentColor"
@@ -24,7 +24,7 @@ function Footer() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 432 432"
-          className="w-7 h-7"
+          className="w-6 h-6 m:w-5 m:h-5 s:w-4 s:h-4"
         >
           <path
             fill="currentColor"
@@ -40,7 +40,7 @@ function Footer() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          className="w-7 h-7"
+          className="w-6 h-6 m:w-5 m:h-5 s:w-4 s:h-4"
         >
           <path
             fill="none"
@@ -57,7 +57,7 @@ function Footer() {
     {
       name: "LeetCode",
       icon: (
-        <svg viewBox="0 0 128 128" className="w-7 h-7">
+        <svg viewBox="0 0 128 128" className="w-6 h-6 m:w-5 m:h-5 s:w-4 s:h-4">
           <path
             fill="#b3b1b0"
             d="M117.555 76.558c0-3.957-3.008-7.178-6.72-7.178H57.159c-3.712 0-6.72 3.221-6.72 7.178c0 3.958 3.002 7.18 6.72 7.18h53.676c3.712.005 6.72-3.217 6.72-7.18"
@@ -89,7 +89,7 @@ function Footer() {
               className="group flex flex-col items-center transition-all duration-300 hover:transform hover:scale-110"
               aria-label={`Visit my ${link.name} profile`}
             >
-              <div className="bg-gray-700 p-4 rounded-xl group-hover:bg-gray-600 transition-colors duration-300 shadow-lg">
+              <div className="bg-gray-700 p-4 w-auto rounded-xl group-hover:bg-gray-600 transition-colors duration-300 shadow-lg">
                 {link.icon}
               </div>
               <span className="mt-2 text-gray-300 group-hover:text-white font-medium transition-colors duration-300">

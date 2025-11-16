@@ -29,7 +29,7 @@ function Contact() {
     }
   };
   return (
-    <div className="bg-gray-700 text-white min-h-screen py-8 px-3 sm:px-5 lg:px-7">
+    <div id="contact" className="bg-gray-700 text-white  py-8 px-3 sm:px-5 lg:px-7">
       <div className="max-w-7xl mx-auto">
         <div className="text-center md:mb-2 mb-4 sm:mb-2">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center">

@@ -6,16 +6,19 @@ import Projects from "../Pages/Projects/Projects.jsx";
 import Github from "../Pages/Github/Github.jsx";
 import Contact from "../Pages/Contact/Contact.jsx";
 import Footer from "../Pages/Footer/Footer.jsx";
+import { Routes ,Route } from 'react-router-dom';
 function AppRoutes() {
   return (
     <>
-    <Header/>
+    <div className='scroll-smooth'>
+      <Header/>
     <Home/>
     <About/>
     <Projects/>
     <Github/>
     <Contact/>
     <Footer/>
+    </div>
     </>
 
   )

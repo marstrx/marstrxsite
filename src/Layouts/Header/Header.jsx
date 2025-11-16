@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
 import logo from "../../assets/Images/marstrx.webp";
 
 function Header() {
+   
+
+
     const [isOpen ,setIsOpen] = useState(false);
     const handleMenuToggel =()=>{
         setIsOpen(prev=>!prev);
@@ -16,10 +18,10 @@ function Header() {
                     <h3>Marstrx</h3>
                 </div>
                 <div className='hidden md:flex items-center gap-5'>
-                    <Link to={"/"}>Home</Link>
-                    <Link to={"/"}>About</Link>
-                    <Link to={"/"}>Projects</Link>
-                    <Link to={"/"}>Contact</Link>
+                    <a href="/">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </div>
 
                 <button 
@@ -48,10 +50,10 @@ function Header() {
                         id="mobile-menu"
                         className='md:hidden fixed top-16 left-0 w-full bg-blue-950 text-white flex flex-col items-center gap-6 py-6 z-40 overflow-x-hidden'
                     >
-                        <Link to={"/"} onClick={()=>setIsOpen(false)}>Home</Link>
-                        <Link to={"/"} onClick={()=>setIsOpen(false)}>About</Link>
-                        <Link to={"/"} onClick={()=>setIsOpen(false)}>Projects</Link>
-                        <Link to={"/"} onClick={()=>setIsOpen(false)}>Contact</Link>
+                        <a href="/" onClick={()=>setIsOpen(false)}>Home</a>
+                        <a href="/" onClick={()=>setIsOpen(false)}>About</a>
+                        <a href="/" onClick={()=>setIsOpen(false)}>Projects</a>
+                        <a href="/" onClick={()=>setIsOpen(false)}>Contact</a>
                     </div>
                 ):""}
             </div>

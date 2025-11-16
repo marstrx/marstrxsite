@@ -10,10 +10,10 @@ const ScrollBarStyles = createGlobalStyle`
     height: 4px;
   }
 
-  ::-webkit-scrollbar-track {
-    background: #1e1e1e;
-    border-radius: 4px;
-  }
+  // ::-webkit-scrollbar-track {
+  //   background: #1e1e1e;
+  //   border-radius: 4px;
+  // }
 
   ::-webkit-scrollbar-thumb {
     background: #ff7a00;

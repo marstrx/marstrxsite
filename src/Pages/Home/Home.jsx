@@ -4,7 +4,6 @@ import logo from "../../assets/Images/marstrx.webp";
 import linkdinLogo from "../../assets/Images/linkdin.webp";
 import githubLogo from "../../assets/Images/github.webp";
 import xLogo from "../../assets/Images/x.webp";
-import { motion } from "motion/react";
 
 function Home() {
   const gradientMove = keyframes`
@@ -128,19 +127,10 @@ function Home() {
 
       {/* Description Section */}
       <div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            opacity: { duration: 0.4 },
-            scale: { type: "spring", bounce: 0.5, duration: 2 },
-          }}
-        >
-          <h2 className="text-lg sm:text-xl md:text-2xl max-w-3xl text-center mx-auto text-gray-200 leading-relaxed">
-            I'm a Full-Stack Web Developer passionate about building clean,
-            fast, and scalable applications using modern web technologies.
-          </h2>
-        </motion.div>
+        <h2 className="text-lg sm:text-xl md:text-2xl max-w-3xl text-center mx-auto text-gray-200 leading-relaxed">
+          I'm a Full-Stack Web Developer passionate about building clean, fast,
+          and scalable applications using modern web technologies.
+        </h2>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import jsCompiler from "../../assets/Projects/jsCompiler.webp";
+import sentenceAnalyzer from "../../assets/Projects/sentenceAnalyzer.webp";
 
 
 function AllProjectsData() {
@@ -12,6 +13,15 @@ function AllProjectsData() {
       tech: ["reactjs", "hooks", "APIs", "Tailwind"],
       githubLink: "https://github.com/marstrx/js-Compiler",
       demoLink: "https://marstrx.github.io/js-Compiler/",
+    },
+    {
+      id: 2,
+      img: sentenceAnalyzer,
+      des: "A fast online tool that counts words, characters, vowels, numbers and more instantly",
+      name: "sentenceAnalyzer",
+      tech: ["HTML", "CSS", "Javascript"],
+      githubLink: "https://github.com/marstrx/sentenceAnalyzer",
+      demoLink: "https://marstrx.github.io/sentenceAnalyzer/",
     }
   ];
 

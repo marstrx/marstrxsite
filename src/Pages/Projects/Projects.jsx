@@ -35,7 +35,7 @@ function Projects() {
     md:min-w-[340px] md:max-w-[340px] 
     lg:min-w-[380px] lg:max-w-[380px] 
      rounded-lg hover:shadow-lg transition-shadow duration-300 
-    border-2 border-black shadow flex-shrink-0 bg-white
+    border-2 border-black shadow bg-white
   "
               >
                 <div className="h-36 md:h-44 lg:h-48 overflow-hidden">

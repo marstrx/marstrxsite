@@ -49,7 +49,7 @@ function Home() {
   //  end of animations
 
   return (
-    <div className="bg-gray-800 pt-10 md:pt-20">
+    <div className="pb-16 bg-gray-800 pt-10 md:pt-20 overflow-hidden">
       <div className="relative w-full text-white flex items-center justify-center overflow-hidden py-12">
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 max-w-6xl mx-auto text-center md:text-left px-2">
           <div>
@@ -132,8 +132,8 @@ function Home() {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 0.4,
-            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            opacity: { duration: 0.4 },
+            scale: { type: "spring", bounce: 0.5, duration: 2 },
           }}
         >
           <h2 className="text-lg sm:text-xl md:text-2xl max-w-3xl text-center mx-auto text-gray-200 leading-relaxed">

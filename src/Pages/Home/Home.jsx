@@ -52,7 +52,9 @@ function Home() {
       <div className="relative w-full text-white flex items-center justify-center overflow-hidden py-12">
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 max-w-6xl mx-auto text-center md:text-left px-2">
           <div>
-            <img width="auto" height="auto"
+            <img
+              width="48"
+              height="48"
               className="w-64 h-auto md:w-64 lg:w-80 rounded-lg"
               src={logo}
               alt="Marstrx logo"
@@ -74,7 +76,9 @@ function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img width="auto" height="auto"
+                <img
+                  width="700"
+                  height="700"
                   className="w-11 h-auto md:w-11 transform transition-transform duration-300 hover:scale-110"
                   src={linkdinLogo}
                   alt="LinkedIn logo"
@@ -86,7 +90,9 @@ function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img width="auto" height="auto"
+                <img
+                  width="40"
+                  height="40"
                   className="w-9 h-auto md:w-10 transform transition-transform duration-300 hover:scale-110"
                   src={githubLogo}
                   alt="GitHub logo"
@@ -98,7 +104,9 @@ function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img width="auto" height="auto"
+                <img
+                  width="40"
+                  height="40"
                   className="w-9 h-auto md:w-10 transform transition-transform duration-300 hover:scale-110"
                   src={xLogo}
                   alt="X logo"
@@ -112,7 +120,16 @@ function Home() {
                 rel="noopener noreferrer"
                 aria-label="Send me an email"
               >
-                <svg className="w-10 h-auto md:w-11 transform transition-transform duration-300 hover:scale-110" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#42a5f5" d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m0 6l-12 6l-12-6V8l12 6l12-6Z"/></svg>
+                <svg
+                  className="w-10 h-auto md:w-11 transform transition-transform duration-300 hover:scale-110"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    fill="#42a5f5"
+                    d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m0 6l-12 6l-12-6V8l12 6l12-6Z"
+                  />
+                </svg>
               </a>
             </div>
 

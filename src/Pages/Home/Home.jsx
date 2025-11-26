@@ -52,7 +52,7 @@ function Home() {
       <div className="relative w-full text-white flex items-center justify-center overflow-hidden py-12">
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 max-w-6xl mx-auto text-center md:text-left px-2">
           <div>
-            <img
+            <img width="auto" height="auto"
               className="w-64 h-auto md:w-64 lg:w-80 rounded-lg"
               src={logo}
               alt="Marstrx logo"
@@ -74,7 +74,7 @@ function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <img width="auto" height="auto"
                   className="w-11 h-auto md:w-11 transform transition-transform duration-300 hover:scale-110"
                   src={linkdinLogo}
                   alt="LinkedIn logo"
@@ -86,7 +86,7 @@ function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <img width="auto" height="auto"
                   className="w-9 h-auto md:w-10 transform transition-transform duration-300 hover:scale-110"
                   src={githubLogo}
                   alt="GitHub logo"
@@ -98,7 +98,7 @@ function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <img width="auto" height="auto"
                   className="w-9 h-auto md:w-10 transform transition-transform duration-300 hover:scale-110"
                   src={xLogo}
                   alt="X logo"

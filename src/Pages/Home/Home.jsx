@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
+import { motion } from "motion/react";
 import logo from "../../assets/Images/marstrx.webp";
 import linkdinLogo from "../../assets/Images/linkdin.webp";
 import githubLogo from "../../assets/Images/github.webp";
@@ -50,8 +51,19 @@ function Home() {
   return (
     <div className="pb-16 bg-gray-800 pt-10 md:pt-20 overflow-hidden">
       <div className="relative w-full text-white flex items-center justify-center overflow-hidden py-12">
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 max-w-6xl mx-auto text-center md:text-left px-2">
-          <div>
+        <motion.div
+          className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 max-w-6xl mx-auto text-center md:text-left px-2"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false, amount: 0.4 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+          >
             <img
               width="48"
               height="48"
@@ -60,7 +72,7 @@ function Home() {
               alt="Marstrx logo"
               fetchPriority="high"
             />
-          </div>
+          </motion.div>
           <div className="flex flex-col justify-center items-center md:items-start">
             <AnimatedGradientText className="text-4xl md:text-5xl lg:text-6xl font-bold animated-gradient-text">
               Marouane Bachar
@@ -70,7 +82,13 @@ function Home() {
             </AnimatedSubtitle>
 
             {/* Social Links */}
-            <div className="flex flex-row gap-4 mt-4 transition duration-300 ease-in-out">
+            <motion.div
+              className="flex flex-row gap-4 mt-4 transition duration-300 ease-in-out"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.4 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            >
               <a
                 href="https://www.linkedin.com/in/marstrx"
                 target="_blank"
@@ -131,10 +149,16 @@ function Home() {
                   />
                 </svg>
               </a>
-            </div>
+            </motion.div>
 
             {/* Buttons */}
-            <div className="flex sm:flex-row gap-4 mt-8 justify-center md:justify-start">
+            <motion.div
+              className="flex sm:flex-row gap-4 mt-8 justify-center md:justify-start"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.4 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.25 }}
+            >
               <a
                 href="#projects"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105"
@@ -147,18 +171,23 @@ function Home() {
               >
                 Contact me
               </a>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Description Section */}
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.4 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
         <h2 className="text-lg sm:text-xl md:text-2xl max-w-3xl text-center mx-auto text-gray-200 leading-relaxed">
           I'm a Full-Stack Web Developer passionate about building clean, fast,
           and scalable applications using modern web technologies.
         </h2>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "motion/react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -200,11 +201,29 @@ const Charts = () => {
   return (
     <div className="min-h-screen bg-gray-700 py-8 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-white text-center mb-6 md:mb-8">
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.6 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <motion.h2
+            className="text-2xl md:text-3xl lg:text-4xl text-white text-center mb-6 md:mb-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.6 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             My GitHub Stats
-          </h2>
-          <div className=" p-6 inline-block">
+          </motion.h2>
+          <motion.div
+            className=" p-6 inline-block"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
             <div className="flex flex-wrap justify-center gap-6 text-sm font-semibold">
               <div className="flex items-center gap-2">
                 <span className=" text-white px-3 py-1 rounded-full">
@@ -222,11 +241,17 @@ const Charts = () => {
                 </span>
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         {/* Language Distribution */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="rounded-2xl shadow-xl p-6 border border-white">
+          <motion.div
+            className="rounded-2xl shadow-xl p-6 border border-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
             <h3 className="text-xl font-bold text-white mb-4 text-center">
               Languages Distribution
             </h3>
@@ -254,10 +279,16 @@ const Charts = () => {
                 }}
               />
             </div>
-          </div>
+          </motion.div>
 
           {/* Top Starred Repos */}
-          <div className="rounded-2xl shadow-xl p-6 border border-white">
+          <motion.div
+            className="rounded-2xl shadow-xl p-6 border border-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+          >
             <h3 className="text-xl font-bold text-white mb-4 text-center">
               Most Starred Repositories
             </h3>
@@ -303,10 +334,16 @@ const Charts = () => {
                 }}
               />
             </div>
-          </div>
+          </motion.div>
 
           {/* Repository Stats */}
-          <div className="rounded-2xl shadow-xl p-6 border border-white">
+          <motion.div
+            className="rounded-2xl shadow-xl p-6 border border-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          >
             <h3 className="text-xl font-bold text-white mb-4 text-center">
               Repository Activity
             </h3>
@@ -352,10 +389,16 @@ const Charts = () => {
                 }}
               />
             </div>
-          </div>
+          </motion.div>
 
           {/* Creation Timeline */}
-          <div className="rounded-2xl shadow-xl p-6 border border-white">
+          <motion.div
+            className="rounded-2xl shadow-xl p-6 border border-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+          >
             <h3 className="text-xl font-bold text-white mb-4 text-center">
               Repository Creation Timeline
             </h3>
@@ -402,10 +445,10 @@ const Charts = () => {
                 }}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
 
-       
+
       </div>
     </div>
   );

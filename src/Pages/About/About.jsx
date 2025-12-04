@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 // import logo from "../../assets/Images/marstrx.png";
 import Tools from "../Skills/Tools";
 import Databases from "../Skills/Databas";
@@ -11,14 +12,26 @@ function About() {
   return (
     <>
       <div id="about" className="bg-gray-700 min-h-screen pl-5 pr-5">
-        <div className="text-white flex items-center flex-col gap-5">
+        <motion.div
+          className="text-white flex items-center flex-col gap-5"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.6 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center">
             About me
           </h2>
-        </div>
+        </motion.div>
 
         {/*  about me paraghraph*/}
-        <div className="flex justify-center items-center border-2 rounded rotate-2 shadow-lg p-6 m-6 bg-gray-800 text-white gap-4 flex-col md:flex-row">
+        <motion.div
+          className="flex justify-center items-center border-2 rounded rotate-2 shadow-lg p-6 m-6 bg-gray-800 text-white gap-4 flex-col md:flex-row"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.4 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,11 +56,17 @@ function About() {
             software engineer and collaborate on impactful projects with teams
             who appreciate quality code, strong problem-solving, and creativity.
           </p>
-        </div>
+        </motion.div>
         {/* ends of about me */}
 
         {/* skills */}
-        <div className="flex flex-col">
+        <motion.div
+          className="flex flex-col"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-white text-center mb-6 md:mb-8 sticky top-40">
             Skills
           </h2>
@@ -65,13 +84,27 @@ function About() {
             {/* Tools */}
             <Tools />
           </div>
-        </div>
+        </motion.div>
         {/* Ends of skills */}
 
         {/* certifications Intro*/}
-        <Intro />
-        {/* certifications Cars */}
-        <MyCertifs />
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
+          <Intro />
+        </motion.div>
+        {/* certifications Cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+        >
+          <MyCertifs />
+        </motion.div>
       </div>
     </>
   );

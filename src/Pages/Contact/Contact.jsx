@@ -1,4 +1,5 @@
 import toast, { Toaster } from "react-hot-toast";
+import { motion } from "motion/react";
 
 function Contact() {
   const MessageSent = () =>
@@ -31,17 +32,41 @@ function Contact() {
   return (
     <div id="contact" className="bg-gray-700 text-white  py-8 px-3 sm:px-5 lg:px-7">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center md:mb-2 mb-4 sm:mb-2">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center">
+        <motion.div
+          className="text-center md:mb-2 mb-4 sm:mb-2"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.6 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <motion.h1
+            className="text-3xl sm:text-4xl md:text-5xl font-bold pt-4 md:pt-6 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.6 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             Get in touch
-          </h1>
-          <p className="mt-2 text-base text-white max-w-xs mx-auto sm:text-xl sm:max-w-2xl sm:mt-4">
+          </motion.h1>
+          <motion.p
+            className="mt-2 text-base text-white max-w-xs mx-auto sm:text-xl sm:max-w-2xl sm:mt-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+          >
             Let's build something amazing together
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Form */}
-        <div className="max-w-sm mx-auto rounded-xl p-3 sm:max-w-2xl sm:p-6 md:p-8 lg:p-12">
+        <motion.div
+          className="max-w-sm mx-auto rounded-xl p-3 sm:max-w-2xl sm:p-6 md:p-8 lg:p-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+        >
           <form className="space-y-2 sm:space-y-4" onSubmit={onSubmit}>
             {/* First Name */}
             <div>
@@ -119,7 +144,7 @@ function Contact() {
               Send Message
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
       <Toaster />
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import AllProjectsData from "./AllProjectsData";
 
 function Projects() {
@@ -7,28 +8,42 @@ function Projects() {
   return (
     <div id="projects" className=" bg-gray-700 py-4 sm:py-8 px-3 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl text-white md:text-5xl sm:text-4xl font-bold text-center mb-6 sm:mb-8">
+        <motion.h2
+          className="text-3xl text-white md:text-5xl sm:text-4xl font-bold text-center mb-6 sm:mb-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.6 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           My Projects
-        </h2>
-        <p
+        </motion.h2>
+        <motion.p
           className="text-lg md:text-xl text-gray-300 text-center leading-relaxed mx-auto 
                    bg-gray-800 rounded-2xl p-6 md:p-8 border
                      transition-all duration-300 rotate-y-10 mb-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
           Through my development journey, I've built a diverse portfolio of
           projects that showcase my skills and passion for creating innovative
           web solutions.
-        </p>
+        </motion.p>
         <div className="">
-          <div
+          <motion.div
             className="flex space-x-4 pb-4 overflow-x-auto "
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",
             }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           >
             {projects.map((project) => (
-              <div
+              <motion.div
                 key={project.id}
                 className="
     min-w-[280px] max-w-[280px] 
@@ -37,6 +52,10 @@ function Projects() {
      rounded-lg hover:shadow-lg transition-shadow duration-300 
     border-2 border-black shadow bg-white
   "
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.4 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
               >
                 <div className="h-36 md:h-44 lg:h-48 overflow-hidden">
                   <img
@@ -110,9 +129,9 @@ function Projects() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

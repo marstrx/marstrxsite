@@ -4,7 +4,7 @@ function Intro() {
   return (
     <>
       <h2 className="text-2xl md:text-3xl lg:text-4xl text-white text-center mb-6 md:mb-8 my-12">
-        Certificatiins
+        certifications
       </h2>
       <p
         className="text-lg md:text-xl text-gray-300 text-center leading-relaxed mx-auto 

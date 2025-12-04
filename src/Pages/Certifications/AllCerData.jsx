@@ -5,10 +5,17 @@ import JavaScriptBasic from "../../assets/certifications/JavaScript(Basic).webp"
 import SQLBasic from "../../assets/certifications/SQL(Basic).webp";
 import SQLIntermediate from "../../assets/certifications/SQL(Intermediate).webp";
 import WordPress from "../../assets/certifications/WordPress.webp";
+import Cs50x from "../../assets/certifications/cs50x.webp";
+import Nodejs from "../../assets/certifications/nodejs.webp";
 
 
 function AllCerData() {
   const myCertifications = [
+    {
+      name: "Introduction to Computer Science",
+      img: Cs50x,
+      link: "https://cs50.harvard.edu/certificates/dd4f606f-6200-440f-bc4c-ac0a1256373c",
+    },
     {
       name: "Introduction to Cybersecurity",
       img: freecodecampFrontEndLibrariesImg,
@@ -18,6 +25,11 @@ function AllCerData() {
       name: "front end development libraries",
       img: IntroductiontoCybersecurity,
       link: "https://www.credly.com/badges/ccb94d59-00a4-402a-bd8a-06223459afc1",
+    },
+    {
+      name: "Nodejs",
+      img: Nodejs,
+      link: "https://simpli-web.app.link/e/BmEziS58JYb",
     },
      {
       name: "JavaScript (Basic)",

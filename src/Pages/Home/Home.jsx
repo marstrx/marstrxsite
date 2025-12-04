@@ -53,17 +53,13 @@ function Home() {
       <div className="relative w-full text-white flex items-center justify-center overflow-hidden py-12">
         <motion.div
           className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 max-w-6xl mx-auto text-center md:text-left px-2"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 40 }}
+          animate={{ y: 0 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.4 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-          >
+          <div>
             <img
               width="48"
               height="48"
@@ -71,8 +67,9 @@ function Home() {
               src={logo}
               alt="Marstrx logo"
               fetchPriority="high"
+              loading="eager"
             />
-          </motion.div>
+          </div>
           <div className="flex flex-col justify-center items-center md:items-start">
             <AnimatedGradientText className="text-4xl md:text-5xl lg:text-6xl font-bold animated-gradient-text">
               Marouane Bachar

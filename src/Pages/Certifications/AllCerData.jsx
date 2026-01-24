@@ -8,7 +8,6 @@ import WordPress from "../../assets/certifications/WordPress.webp";
 import Cs50x from "../../assets/certifications/cs50x.webp";
 import Nodejs from "../../assets/certifications/nodejs.webp";
 
-
 function AllCerData() {
   const myCertifications = [
     {
@@ -31,7 +30,7 @@ function AllCerData() {
       img: Nodejs,
       link: "https://simpli-web.app.link/e/BmEziS58JYb",
     },
-     {
+    {
       name: "JavaScript (Basic)",
       img: JavaScriptBasic,
       link: "https://www.hackerrank.com/certificates/b2f7f75db900",
@@ -46,7 +45,7 @@ function AllCerData() {
       img: SQLIntermediate,
       link: "https://www.hackerrank.com/certificates/143c49ebbd4f",
     },
-     {
+    {
       name: "Build a free website with WordPress",
       img: WordPress,
       link: "https://coursera.org/share/6bf4d5eeb1df3e07f7f7385fdea1f7f4",

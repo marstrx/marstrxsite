@@ -1,7 +1,6 @@
 import React from "react";
 import AllCerData from "./AllCerData";
 
-
 function MyCertifs() {
   const certifications = AllCerData();
 
@@ -33,9 +32,7 @@ function MyCertifs() {
               />
             </a>
           </div>
-          
         ))}
-        
       </div>
     </div>
   );

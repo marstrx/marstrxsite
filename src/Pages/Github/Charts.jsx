@@ -25,7 +25,7 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  DoughnutController
+  DoughnutController,
 );
 
 const Charts = () => {
@@ -40,14 +40,12 @@ const Charts = () => {
   const fetchGitHubData = async () => {
     try {
       // Fetch my github data
-      const userResponse = await fetch(
-        `https://api.github.com/users/marstrx`
-      );
+      const userResponse = await fetch(`https://api.github.com/users/marstrx`);
       const userData = await userResponse.json();
 
       // Fetch repositories
       const reposResponse = await fetch(
-        `https://api.github.com/users/marstrx/repos?per_page=100`
+        `https://api.github.com/users/marstrx/repos?per_page=100`,
       );
       const reposData = await reposResponse.json();
 
@@ -164,7 +162,7 @@ const Charts = () => {
         const year = new Date(repo.created_at).getFullYear();
         acc[year] = (acc[year] || 0) + 1;
         return acc;
-      }, {})
+      }, {}),
     ).sort(),
     datasets: [
       {
@@ -174,7 +172,7 @@ const Charts = () => {
             const year = new Date(repo.created_at).getFullYear();
             acc[year] = (acc[year] || 0) + 1;
             return acc;
-          }, {})
+          }, {}),
         ),
         borderColor: "rgb(75, 192, 192)",
         backgroundColor: "rgba(75, 192, 192, 0.2)",
@@ -447,8 +445,6 @@ const Charts = () => {
             </div>
           </motion.div>
         </div>
-
-
       </div>
     </div>
   );

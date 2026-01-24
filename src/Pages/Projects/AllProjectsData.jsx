@@ -2,7 +2,6 @@ import React from "react";
 import jsCompiler from "../../assets/Projects/jsCompiler.webp";
 import sentenceAnalyzer from "../../assets/Projects/sentenceAnalyzer.webp";
 
-
 function AllProjectsData() {
   const AllProject = [
     {
@@ -22,7 +21,7 @@ function AllProjectsData() {
       tech: ["HTML", "CSS", "Javascript"],
       githubLink: "https://github.com/marstrx/sentenceAnalyzer",
       demoLink: "https://marstrx.github.io/sentenceAnalyzer/",
-    }
+    },
   ];
 
   return AllProject;

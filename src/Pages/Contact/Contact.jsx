@@ -4,7 +4,8 @@ import { motion } from "motion/react";
 function Contact() {
   const MessageSent = () =>
     toast.success("Your message has been sent. Thank you!");
-  const MessageFailed = () => toast.error("Your message has not been sent Try again");
+  const MessageFailed = () =>
+    toast.error("Your message has not been sent Try again");
   const Loading = () => toast.loading("Sending....");
 
   const onSubmit = async (event) => {
@@ -30,7 +31,10 @@ function Contact() {
     }
   };
   return (
-    <div id="contact" className="bg-gray-700 text-white  py-8 px-3 sm:px-5 lg:px-7">
+    <div
+      id="contact"
+      className="bg-gray-700 text-white  py-8 px-3 sm:px-5 lg:px-7"
+    >
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center md:mb-2 mb-4 sm:mb-2"
